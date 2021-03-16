@@ -1,0 +1,59 @@
+body {
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+
+form {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+h3 {
+  margin-left: 200px;
+  margin-top: 10px;
+  color: rgb(55, 0, 255);
+}
+
+.card {
+  border-radius: 20px;
+  max-width: 500px;
+  border: 1px solid #42a5f5;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+
+.notes {
+  font-size: 20px;
+  margin-top: 55px;
+  margin-left: 10px;
+  color: rgb(55, 0, 255);
+}
+
+.row {
+  margin-top: 70px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#city-weather {
+  border-radius: 5px;
+  border: 1px solid #42a5f5;
+  padding-top: 4px;
+  padding-bottom: 6px;
+}
+
+#current-location {
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-left: 300px;
+  margin-top: 10px;
+  background-color: rgb(0, 123, 255);
+  color: white;
+  border: 1px solid #42a5f5;
+}
+
+#current-location:hover {
+  background-color: blue;
+}
