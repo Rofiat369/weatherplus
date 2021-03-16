@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Report</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <form>
+          <input type="text" placeholder="City Name" id="city-weather" />
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <div class="notes">
+          <p id="the-city">City</p>
+          <p id="today-date">Sunday, February 14, 2021.</p>
+          <time id="time-of-day"> 12:00pm </time>
+        </div>
+        <button type="submit" id="current-location">Current Location</button>
+        <h3>
+          Currently <span class="celsius"> °C </span> |
+          <span class="farenheit"> °F </span>
+        </h3>
+        <div class="row">
+          <div class="col-2">Monday <br />🌞</div>
+          <div class="col-2">Tuesday <br />🌧</div>
+          <div class="col-2">Wednesday <br />🌤</div>
+          <div class="col-2">Thursday <br />❄</div>
+          <div class="col-2">Friday <br />🌤</div>
+          <div class="col-2">Saturday <br />🌤</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
