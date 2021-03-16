@@ -13,6 +13,14 @@ h3 {
   color: rgb(55, 0, 255);
 }
 
+footer {
+  text-align: center;
+  margin: 3px;
+  padding: 3px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .card {
   border-radius: 20px;
   max-width: 500px;
