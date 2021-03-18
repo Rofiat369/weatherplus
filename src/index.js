@@ -34,8 +34,7 @@ function dateAndTime(timestamp) {
 
     let time = today.getHours();
     let minutes = today.getMinutes();
-    let hour = document.querySelector("#time-of-day");
-    hour.innerHTML = `${time}:${minutes}`;
+    return `${time}:${minutes}`;
 
 }
 
