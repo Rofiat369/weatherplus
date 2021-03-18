@@ -48,7 +48,7 @@ function showWeather(response) {
     let farenheitWeather = document.querySelector(".farenheit");
     farenheitWeather.innerHTML = `${fweather}°F`;
     let dateElement = document.querySelector("#time-of-day");
-    dateElement.innerHTML = dateAndTime(response.data.dt * 1000)
+    dateElement.innerHTML = dateAndTime(response.data.dt * 1000).value;
 }
 
 function changeCity(event) {
