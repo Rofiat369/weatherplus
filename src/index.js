@@ -33,8 +33,14 @@ function dateAndTime(timestamp) {
 
 
     let time = today.getHours();
+    if (time < 10) {
+        time = `0${time}`
+    };
     let minutes = today.getMinutes();
-    return `${time}.value:${minutes}.value`;
+    if (minutes < 10) {
+        minutes = `0${minutes}`
+    };
+    return `${time}:${minutes}`;
 
 }
 
