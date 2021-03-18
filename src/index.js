@@ -1,5 +1,5 @@
-function formatDate(timestamp) {
-    let today = new Date();
+function dateAndTime(timestamp) {
+    let today = new Date(timestamp);
     let date = today.getDate();
     let months = [
         "January",
@@ -48,7 +48,7 @@ function showWeather(response) {
     let fweather = Math.round((weather * 9) / 5 + 32);
     let farenheitWeather = document.querySelector(".farenheit");
     farenheitWeather.innerHTML = `${fweather}°F`;
-    let dateElement = document.querySelector("#today-date");
+    let dateElement = document.querySelector("#time-of-day");
     dateElement.innerHTML = dateAndTime(response.data.dt * 1000)
 }
 
