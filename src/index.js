@@ -1,39 +1,44 @@
-let today = new Date();
-let date = today.getDate();
-let months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-];
-let month = months[today.getMonth()];
-let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-    "Sunday"
-];
-let day = days[today.getDay()];
-let year = today.getFullYear();
-let todaysDate = document.querySelector("#today-date");
-todaysDate.innerHTML = `${day}, ${month} ${date}, ${year}.`;
+function formatDate(timestamp) {
+    let today = new Date();
+    let date = today.getDate();
+    let months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ];
+    let month = months[today.getMonth()];
+    let days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+    ];
+    let day = days[today.getDay()];
+    let year = today.getFullYear();
+    let todaysDate = document.querySelector("#today-date");
+    todaysDate.innerHTML = `${day}, ${month} ${date}, ${year}.`;
 
-let time = today.getHours();
-let minutes = today.getMinutes();
-let hour = document.querySelector("#time-of-day");
-hour.innerHTML = `${time}:${minutes}`;
+
+    let time = today.getHours();
+    let minutes = today.getMinutes();
+    let hour = document.querySelector("#time-of-day");
+    hour.innerHTML = `${time}:${minutes}`;
+
+}
+
 
 function showWeather(response) {
     document.querySelector("#the-city").innerHTML = response.data.name;
@@ -43,6 +48,8 @@ function showWeather(response) {
     let fweather = Math.round((weather * 9) / 5 + 32);
     let farenheitWeather = document.querySelector(".farenheit");
     farenheitWeather.innerHTML = `${fweather}°F`;
+    let dateElement = document.querySelector("#today-date");
+    dateElement.innerHTML = dateAndTime(response.data.dt * 1000)
 }
 
 function changeCity(event) {
