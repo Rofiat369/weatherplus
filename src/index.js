@@ -44,6 +44,19 @@ function dateAndTime(timestamp) {
 
 }
 
+function weatherHours(timestamp) {
+    let today = new Date(timestamp);
+    let time = today.getHours();
+    if (time < 10) {
+        time = `0${time}`
+    };
+    let minutes = today.getMinutes();
+    if (minutes < 10) {
+        minutes = `0${minutes}`
+    };
+    return `${time}:${minutes}`;
+}
+
 
 function showWeather(response) {
     document.querySelector("#the-city").innerHTML = response.data.name;
@@ -64,7 +77,7 @@ function displayTemperature(response) {
 
     forecastElement.innerHTML =
         `<div class="col-2">
-    12:00
+    ${weatherHours(forecast.dt * 1000)};
     <img
     src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
     <div class="weather-forecast"><strong>${Math.round(forecast.main.temp_max)}°
