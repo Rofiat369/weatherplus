@@ -64,10 +64,10 @@ function displayTemperature(response) {
     console.log(forecast);
     forecastElement.innerHTML =
         `<div class="col-2">
-    ${formatHours(forecast.dt * 1000)}
+    12:00
     <img
-    src=""http://openweathermap.org/img/wn/${forecast.weather[0].icon
-        }@2x.png""
+    src="http://openweathermap.org/img/wn/${forecast.weather[0].icon
+        }@2x.png"
     alt="" />
     <div class="weather-forecast"><strong>${Math.round(forecast.main.temp_max)}°
     </strong>${Math.round(forecast.main.temp_min)}°</div>
