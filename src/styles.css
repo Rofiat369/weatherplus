@@ -22,7 +22,7 @@ footer {
 }
 
 img {
-  margin-left: 50px;
+  margin-right: 50px;
 }
 .card {
   border-radius: 20px;
@@ -44,8 +44,6 @@ img {
 .row {
   margin-top: 70px;
   margin-bottom: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 #city-weather {
