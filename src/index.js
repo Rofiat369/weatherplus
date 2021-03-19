@@ -61,14 +61,12 @@ function showWeather(response) {
 function displayTemperature(response) {
     let forecastElement = document.querySelector("#forecast");
     let forecast = response.data.list[0];
-    console.log(forecast);
+
     forecastElement.innerHTML =
         `<div class="col-2">
     12:00
     <img
-    src="http://openweathermap.org/img/wn/${forecast.weather[0].icon
-        }@2x.png"
-    alt="" />
+    src="https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png" />
     <div class="weather-forecast"><strong>${Math.round(forecast.main.temp_max)}°
     </strong>${Math.round(forecast.main.temp_min)}°</div>
     </div>`
