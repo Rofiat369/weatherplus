@@ -59,7 +59,9 @@ function showWeather(response) {
 }
 
 function displayTemperature(response) {
-    console.log(response)
+    let forecastElement = document.querySelector("#forecast");
+
+    console.log(response);
 }
 
 function changeCity(event) {
