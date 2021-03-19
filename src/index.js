@@ -60,7 +60,14 @@ function showWeather(response) {
 
 function displayTemperature(response) {
     let forecastElement = document.querySelector("#forecast");
-
+    forecastElement.innerHTML = `<div class="col-2">
+            12:00
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+              alt=""
+            />
+            <div class="weather-forecast"><strong>16</strong> 17°</div>
+          </div>`
     console.log(response);
 }
 
