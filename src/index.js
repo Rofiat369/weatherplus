@@ -62,15 +62,15 @@ function displayTemperature(response) {
     let forecastElement = document.querySelector("#forecast");
     let forecast = response.data.list[0];
     console.log(forecast);
-    forecastElement.innerHTML = `<div class="col-2">
-            12:00
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
-              alt=""
-            />
-            <div class="weather-forecast"><strong>${Math.round(forecast.main.temp_max)}°</strong>${Math.round(forecast.main.temp_min)}°</div>
-          </div>`
-
+    forecastElement.innerHTML =
+        `<div class="col-2">
+    12:00
+    <img
+    src="https://ssl.gstatic.com/onebox/weather/48/rain_s_cloudy.png"
+    alt="" />
+    <div class="weather-forecast"><strong>${Math.round(forecast.main.temp_max)}°
+    </strong>${Math.round(forecast.main.temp_min)}°</div>
+    </div>`
 }
 
 function changeCity(event) {
