@@ -70,7 +70,7 @@ function changeCity(event) {
 let element = document.querySelector("form");
 element.addEventListener("submit", changeCity);
 
-function displayTemperature() {
+function displayTemperature(response) {
 
 }
 
@@ -81,7 +81,7 @@ function locating(position) {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(showWeather);
 
-    apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${position}&appid={apiKey}`;
+    apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${position}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayTemperature);
 
 }
