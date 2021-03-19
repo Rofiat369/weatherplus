@@ -71,7 +71,7 @@ let element = document.querySelector("form");
 element.addEventListener("submit", changeCity);
 
 function displayTemperature(response) {
-
+    console.log(response)
 }
 
 function locating(position) {
