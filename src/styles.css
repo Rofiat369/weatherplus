@@ -21,6 +21,9 @@ footer {
   font-family: "Times New Roman", Times, serif;
 }
 
+img {
+  margin-right: 50px;
+}
 .card {
   border-radius: 20px;
   max-width: 500px;
@@ -41,6 +44,7 @@ footer {
 .row {
   margin-top: 70px;
   margin-bottom: 15px;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
